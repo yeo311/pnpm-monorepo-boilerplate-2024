@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier-check": "prettier --check .",
+    "prettier-fix": "prettier --write ."
   },
   "keywords": [],
   "engines": {
@@ -14,5 +15,8 @@
   },
   "packageManager": "pnpm@8.15.1",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
 }
